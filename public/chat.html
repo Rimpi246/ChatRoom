@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body id="chat-body">
+  <div class="chat">
+
+  <div id="chat-container">
+    <header class="chat-header">
+      <h1>Let's Chat!</h1>
+    </header>
+
+    <main class="chat-main">
+
+      <div class="left">
+
+
+        <div class="chat-sidebar">
+          <h3>Room Name</h3>
+          <h2 id="room-name"></h2>
+          <h2 id="users-h2"><i class="fa fa-users"> Users</i></h2>
+          <ul id="users"></ul>
+        </div>
+
+      </div>
+
+
+      <div class="right">
+
+        <div id="feedback">
+          <h2>Hi</h2>
+        </div>
+
+        <div class="chat-messages">
+        </div>
+
+
+        <div id="chat-form container">
+          <form id="chat-form">
+            <input id="inputMessage" type="text" name="inputMessage" placeholder="     Enter a message" required autocomplete="off"></input>
+            <button id="btn">Send</button>
+          </form>
+        </div>
+      </div>
+
+
+  </div>
+
+
+
+  </main>
+
+  <!-- <div id="chat-form container">
+    <form id="chat-form">
+      <input id="inputMessage" type="text" name="inputMessage" placeholder="Enter a message" required autocomplete="off"></input>
+      <button id="btn">Send</button>
+    </form>
+  </div> -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="/chat.js"></script>
+
+  </div>
+</body>
+
+</html>
